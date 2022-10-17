@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Gemunu+Libre:wght@300;400&family=Poppins:ital,wght@0,300;0,400;1,300&family=Quicksand:wght@300;400;500;600&family=Rubik:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+    --header-color: #eeeeee;
+    --button-color:	#4051ff;
+    --font-color: 	#ffffff;
+    --number-color:	#05051c;
+    --button-delete:#d32727;
+    --button-deleteHover:#730b18;
+    --button-arsip: #5f6b7d;
+    --button-arsipHover:#062435;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Header */
+.header {
+    top: 0;
+    z-index: 9999;
+    position: sticky;
+    background-color: var(--header-color);
+    color: var(--number-color);
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.head h2 {
+    cursor: pointer;
+}
+.search {
+    width: 45%;
+    height: 40px;
+}
+
+/* form */
+.box-input {
+    margin-top: 20px;
+}
+.input {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 48px;
+    margin-top: 10px;
+}
+.number {
+    color: var(--number-color);
+    margin-left: 95%;
+    margin-bottom: -46px;
+}
+.input textarea {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+.input button {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--button-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--font-color);
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* noteItem */
+.box-btn {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-danger {
+    background-color: var(--button-delete);
+    color: var(--font-color);
+    width: 50%;
+    height: 40px;
+}
+.btn-danger:hover {
+    background-color: var(--button-deleteHover);
+}
+.btn-secondary {
+    background-color: var(--button-arsip);
+    color: var(--font-color);
+    width: 49%;
+    height: 40px;
+}
+.btn-secondary:hover {
+    background-color: var(--button-arsipHover);
+}
+
+/* message */
+.message {
+    text-align: center;
+    color: var(--button-delete);
+}
